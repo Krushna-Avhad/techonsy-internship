@@ -4,3 +4,4 @@ while(num>0) {
     fact*=num;
     num--;
 }
+
