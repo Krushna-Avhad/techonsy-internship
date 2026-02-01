@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+
+    <h1> Details </h1>
+
+    <label>Name</label>
+    <input type="text" id="name"><br><br>
+
+    <button type="button" onclick="display()">Submit</button>
+
+    <p id="p"></p>
+
+    <script>
+        function display() {
+            //call value
+            let name = document.getElementById("name").value;
+
+            //value set browser storage
+            localStorage.setItem("username", name);
+            
+            //href next page
+            window.location.href = "redirect.html";
+
+            //get value from browser storage
+            // let firstName = localStorage.getItem("username");
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+css/
+
+global.css (for general styles)
+
+layout.css (for layout and positioning)
+
+components.css (for reusable components like buttons, forms, etc.)
+
+responsive.css (for media queries)
+
+about.css (specific styles for the About page)
+
+cities.css (specific styles for the Cities page)
+
+contact.css (specific styles for the Contact page)
+
+index.css (specific styles for the Home page)
+
+jaipur.css (specific styles for the Jaipur page)
+
+mumbai.css (specific styles for the Mumbai page)
+
+pune.css (specific styles for the Pune page)
+
+mysore.css (specific styles for the Mysore page)
+
+varanasi.css (specific styles for the Varanasi page)
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | India Exploration Camp</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Global CSS (for general styles) -->
+    <link rel="stylesheet" href="css/global.css">
+
+    <!-- Layout CSS (for layout and positioning) -->
+    <link rel="stylesheet" href="css/layout.css">
+
+    <!-- Components CSS (for reusable components like buttons, forms, etc.) -->
+    <link rel="stylesheet" href="css/components.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- About Page CSS (if you have it) -->
+    <link rel="stylesheet" href="css/about.css">
+
+    <!-- Navbar CSS (if you have it) -->
+    <link rel="stylesheet" href="css/navbar.css">
+
+    <!-- Hero Section CSS (if you have it) -->
+    <link rel="stylesheet" href="css/hero.css">
+
+    <!-- Values Section CSS (if you have it) -->
+    <link rel="stylesheet" href="css/values.css">
+
+    <!-- Responsive CSS (for media queries) -->
+    <link rel="stylesheet" href="css/responsive.css">
+</head>

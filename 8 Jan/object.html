@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Object </title>
+</head>
+<body>
+    <h1> Car Object </h1>
+    <p id="demo"> </p>
+
+
+    <script> 
+
+        //object creation (1st method)
+        const car={
+            type:"Diesel",
+            price:2000000,
+            color:"White",
+            brand:"BMW"
+        };
+        document.getElementById("demo").innerHTML=
+        "Type: " + car.type + "<br>" + 
+        "Price: " + car.price + "<br>" +
+        "Color: " + car.color + "<br>" +
+        "Brand: " + car.brand + "<br>";
+
+        //object creation (2nd method)
+        let student = {
+            name: "Krushna",
+            age: 18,
+            course: "Diploma in Computer Engineering",
+            rollno: 2306009,
+            marks: 100,
+            college: "Government Polytechnic, Pune"
+        };
+        console.log("Student Name: " + student.name);
+        console.log("Student Age: " + student.age);
+        console.log("Student Course: " + student.course);
+        console.log("Student Roll No: " + student.rollno);
+        console.log("Student Marks: " + student.marks);
+        console.log("Student College: " + student.college);
+        
+
+    </script>
+</body>
+</html>
+
+
+<!--
+// creation and accessing object properties in JavaScript
+// fetch, JS Calling store, output
+// localstorage concept
+// hw: redirect page 2nd page fetch and display
+// hw: Quiz tracker using object and localstorage (sync and )
+// hw: 
+-->

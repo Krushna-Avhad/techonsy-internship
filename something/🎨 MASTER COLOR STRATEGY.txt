@@ -1,0 +1,117 @@
+🎨 MASTER COLOR STRATEGY
+Website: India Exploration Camp
+🎯 Overall Design Feel
+Rich
+Heritage-inspired
+Royal + Modern
+Indian cultural touch
+Easy on eyes 👀
+
+🌈 GLOBAL (COMMON) WEBSITE COLORS
+These stay same across all pages for brand identity.
+
+Purpose	Color	Hex Code	Reason
+Primary Brand	Royal Indigo 🔷	#1C1F4A	Feels premium, trustworthy
+Secondary	Antique Gold 🟡	#C9A24D	Royal & luxury
+Background	Ivory White 🤍	#F9F6F1	Clean, heritage paper feel
+Text (Main)	Charcoal Black ⚫	#2B2B2B	Soft, readable
+Accent	Peacock Teal 🦚	#0E6F6C	Indian cultural vibe
+
+👉 These colors give unity across the website 🌐
+🏙️ CITY-WISE COLOR PALETTE (VERY IMPORTANT)
+Each city has:
+Primary City Color
+Secondary Accent
+Highlight Color
+Used in:
+Hero section
+Buttons
+Borders
+Icons
+Headings
+
+🌃 MUMBAI – City of Dreams
+Theme: Nightlife, sea, modern skyline 🌊🌃
+Role	Color	Hex
+Primary	Midnight Blue 🌌	#0B1C2D
+Secondary	Sea Blue 🌊	#1F6AE1
+Highlight	Silver Grey ✨	#C4C7CC
+
+🧠 Reasoning:
+Represents Arabian Sea
+Urban, fast life
+Corporate & modern
+
+🌇 PUNE – Youth, Education & Nature
+Theme: Greenery + modern culture 🌿🎓
+Role	Color	Hex
+Primary	Forest Green 🌳	#1E5631
+Secondary	Olive Green 🍃	#A4C639
+Highlight	Soft Cream 🤍	#EFE7DA
+🧠 Reasoning:
+Calm yet progressive
+Education hub
+Nature + tech balance
+
+🏰 MYSORE – Royal Heritage
+Theme: Palace, silk, tradition 👑
+Role	Color	Hex
+Primary	Royal Maroon ❤️	#6A1B2B
+Secondary	Gold Dust 🟡	#D4AF37
+Highlight	Sand Beige 🏜️	#EFE1C6
+🧠 Reasoning:
+Palace royalty
+South Indian heritage
+Luxury & elegance
+
+🏜️ JAIPUR – The Pink City
+Theme: Desert, forts, tradition 🌸
+Role	Color	Hex
+Primary	Heritage Pink 🌷	#D16C7D
+Secondary	Terracotta 🧱	#B55239
+Highlight	Royal Cream 🤍	#FFF1D6
+🧠 Reasoning:
+Traditional pink architecture
+Royal forts
+Warm desert tones
+
+🛕 VARANASI – Spiritual Capital
+
+Theme: Spiritual, ancient, divine 🔱
+Role	Color	Hex
+Primary	Deep Saffron 🟠	#D97706
+Secondary	Ganga Blue 🔵	#1E3A8A
+Highlight	Ash White 🤍	#F3F4F6
+🧠 Reasoning:
+Spiritual fire & rituals
+Holy river Ganga
+Peace & depth
+
+🎯 HOW TO APPLY CITY COLORS (DESIGN RULES)
+✅ Use city primary color in:
+Hero background
+City title
+Buttons
+✅ Use secondary color in:
+Icons
+Section borders
+Hover effects
+✅ Use highlight sparingly:
+Cards
+Text background
+Dividers
+🚫 Never mix two city palettes on one page
+🧩 BONUS: CSS VARIABLES (BEST PRACTICE 💡)
+Later we’ll do:
+
+:root {
+  --brand-primary: #1C1F4A;
+  --brand-gold: #C9A24D;
+}
+
+And city-wise:
+
+.mumbai {
+  --city-primary: #0B1C2D;
+}
+

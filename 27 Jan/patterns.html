@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=script, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // square pattern
+        let n = 4;
+        for(let i=1;i<=n;i++){
+            for(let j=1;j<=n;j++){
+                document.write("*");
+            }
+            document.write("<br>");
+        }
+        document.write("<br>");
+        // 1111 2222 3333 4444 pattern
+        let m = 4;
+        for(let i=1;i<=m;i++){
+            for(let j=1;j<=m;j++){
+                document.write(i);
+            }
+            document.write("<br>");
+        }
+        document.write("<br>");
+        // 1234 1234 1234 1234 pattern
+        let p = 4;
+        for(let i=1;i<=p;i++){
+            for(let j=1;j<=p;j++){
+                document.write(j);
+            }
+            document.write("<br>");
+        }
+        // 1111 0000 1111 0000 pattern
+        document.write("<br>");
+        let q = 4;
+        for(let i=1;i<=q;i++){
+            for(let j=1;j<=q;j++){
+                if(i%2==0){
+                    document.write("0");
+                }
+                else{
+                    document.write("1");
+                }
+            }
+            document.write("<br>");
+        }
+        // 1010 1010 1010 1010 pattern
+        document.write("<br>");
+        let r = 4;
+        for(let i=1;i<=r;i++){
+            for(let j=1;j<=r;j++){
+                if(j%2==0){
+                    document.write("0");
+                }
+                else{
+                    document.write("1");
+                }
+            }
+            document.write("<br>");
+        }
+        // 1010 0101 1010 0101 pattern
+        document.write("<br>");
+        let s = 4;
+        for(let i=1;i<=s;i++){
+            for(let j=1;j<=s;j++){
+                if(i%2==0){
+                    if(j%2==0){
+                        document.write("0");
+                    }
+                    else{
+                        document.write("1");
+                    }
+                }
+                else{
+                    if(j%2==0){
+                        document.write("1");
+                    }
+                    else{
+                        document.write("0");
+                    }
+                }
+            }
+            document.write("<br>");
+        }
+        // 123 456 789 pattern
+        document.write("<br>");
+        let t = 3;
+        for(let i=1;i<=t;i++){
+            for(let j=1;j<=t;j++){
+                document.write(1*j + (i-1)*t);
+            }
+            document.write("<br>");
+        }
+        // aaaa bbbb cccc dddd pattern
+        document.write("<br>");
+        let u = 4;
+        for(let i=1;i<=u;i++){
+            for(let j=1;j<=u;j++){
+                document.write(String.fromCharCode(96+i));
+            }
+            document.write("<br>");
+        }
+        // ancd abcd abcd abcd pattern
+
+        document.write("<br>");
+        let v = 4;      
+        for(let i=1;i<=v;i++){
+            for(let j=1;j<=v;j++){
+              
+                document.write(String.fromCharCode(96+i));
+            }
+        }
+            document.write("<br>");
+        // ace gik moq pattern
+        document.write("<br>");
+        let w = 4;
+        for(let i=1;i<=w;i++){
+            for(let j=1;j<=w;j++){
+                document.write(String.fromCharCode(96+i*2-1));
+            }
+            document.write("<br>");
+        }
+        //bdf hjl npr
+        document.write("<br>");
+        let x = 4;
+        for(let i=1;i<=x;i++){
+            for(let j=1;j<=x;j++){
+                document.write(String.fromCharCode(96+i*2));
+            }
+            document.write("<br>");
+        }
+    </script>
+</body>
+</html>

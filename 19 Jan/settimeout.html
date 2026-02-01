@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Show / Hide Content</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      width: 300px;
+    }
+
+    button {
+      background-color: #667eea;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #5a67d8;
+    }
+
+    #box {
+      margin-top: 20px;
+      padding: 15px;
+      background-color: #f0f4ff;
+      border-left: 5px solid #667eea;
+      border-radius: 5px;
+      display: none;
+      font-size: 15px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <button onclick="showContent()">Show Content</button>
+  <div id="box">Hello! This content will hide after 3 seconds.</div>
+</div>
+
+<script>
+  function showContent() {
+    let box = document.getElementById("box");
+    box.style.display = "block";
+
+    setTimeout(function () {
+      box.style.display = "none";
+    }, 3000);
+  }
+</script>
+
+</body>
+</html>

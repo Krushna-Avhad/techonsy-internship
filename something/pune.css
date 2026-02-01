@@ -1,0 +1,79 @@
+/* ================= PUNE HERO ================= */
+.pune-hero {
+    background:
+        linear-gradient(
+            135deg,
+            rgba(30, 86, 49, 0.85),
+            rgba(30, 86, 49, 0.6)
+        ),
+        url("../images/pune.jpg") center/cover no-repeat;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.pune-hero p {
+    color: var(--pune-accent);
+}
+
+/* ================= CITY SECTIONS ================= */
+.pune-hero ~ .city-section {
+    background-color: var(--pune-light);
+}
+
+.pune-hero ~ .city-section h2 {
+    color: var(--pune-primary);
+}
+
+.pune-hero ~ .city-section h2::after {
+    content: "";
+    width: 60%;
+    height: 3px;
+    background: var(--pune-accent);
+    display: block;
+    margin-top: 8px;
+}
+
+.pune-hero ~ .city-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+/* ================= ATTRACTIONS ================= */
+.pune-hero ~ .city-section .attractions li {
+    border-left-color: var(--pune-secondary);
+    transition: transform 0.35s ease, box-shadow 0.35s ease, background 0.35s ease;
+}
+
+.pune-hero ~ .city-section .attractions li:hover {
+    transform: translateY(-8px);
+    background: linear-gradient(
+        135deg,
+        rgba(34, 197, 94, 0.15),
+        rgba(34, 197, 94, 0.05)
+    );
+    box-shadow: 0 10px 28px rgba(34, 197, 94, 0.25);
+}
+
+/* ================= BACK HOME BUTTON ================= */
+.pune-hero ~ .back-home a {
+    text-align: center;
+    display: inline-block;
+    color: white;
+    background: var(--pune-primary);
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pune-hero ~ .back-home a:hover {
+    background: var(--pune-secondary);
+    transform: scale(1.08);
+    box-shadow: 0 10px 30px rgba(34, 197, 94, 0.3);
+}

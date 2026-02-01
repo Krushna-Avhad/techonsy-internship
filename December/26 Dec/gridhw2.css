@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1e1f2b;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 15px;
+
+    width: 600px;
+    height: 300px;
+    padding: 15px;
+    background: #2b2d42;
+}
+
+.box {
+    border-radius: 6px;
+}
+
+.a { background: #ff6b6b; }
+.b { background: #ff8c66; }
+.c { background: #ffad66; }
+.d { background: #00a884; }
+.e { background: #1abc9c; }
+.f { background: #3ddc97; }

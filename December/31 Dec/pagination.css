@@ -1,0 +1,35 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f7fa;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.pagination {
+  display: inline-flex;
+  gap: 10px;
+}
+
+.pagination a {
+  text-decoration: none;
+  padding: 10px 16px;
+  background: white;
+  color: #555;
+  border-radius: 8px;
+  font-size: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: 0.3s ease;
+}
+
+.pagination a:hover {
+  background: #6c63ff;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.pagination a.active {
+  background: #6c63ff;
+  color: white;
+  font-weight: bold;
+}
+

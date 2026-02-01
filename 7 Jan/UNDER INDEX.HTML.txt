@@ -1,0 +1,46 @@
+UNDER INDEX.HTML
+
+<!-- Replace your inline JavaScript with this at bottom of index.html -->
+<script>
+// Move cityData to separate file or keep here
+const cityData = [
+  {
+    name: "Mumbai",
+    type: "relax",
+    minDays: 2,
+    minBudget: 7000,
+    tags: ["beaches", "nightlife", "shopping", "food"]
+  },
+  {
+    name: "Pune",
+    type: "relax",
+    minDays: 2,
+    minBudget: 5000,
+    tags: ["historical", "cafes", "education", "nature"]
+  },
+  {
+    name: "Mysore",
+    type: "culture",
+    minDays: 2,
+    minBudget: 6000,
+    tags: ["palace", "heritage", "yoga", "silks"]
+  },
+  {
+    name: "Jaipur",
+    type: "culture",
+    minDays: 3,
+    minBudget: 7000,
+    tags: ["forts", "shopping", "royal", "desert"]
+  },
+  {
+    name: "Varanasi",
+    type: "culture",
+    minDays: 2,
+    minBudget: 5000,
+    tags: ["spiritual", "temples", "ganga", "meditation"]
+  }
+];
+
+// Store in localStorage for use across pages
+localStorage.setItem('cityData', JSON.stringify(cityData));
+</script>

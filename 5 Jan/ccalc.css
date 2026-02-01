@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e3f9ff; /* Soft light blue background */
+}
+
+.calculator {
+    background: #3a4452; /* Dark background for calculator */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Grey Color for Display */
+form .display {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+
+form .display input {
+    text-align: right;
+    flex: 1;
+    font-size: 55px; /* Increased font size for better readability */
+    color: #fff;
+    background: #7f8c8d; /* Grey background for display box */
+    border-radius: 10px;
+    box-shadow: none;
+    padding: 10px; /* Added padding to avoid text sticking to the edges */
+    margin: 5px; /* Added margin to avoid it sticking to other elements */
+    letter-spacing: 2px; /* Slightly increase letter spacing for clarity */
+}
+
+/* Button Styling */
+.calculator form input {
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
+    background: transparent;
+    color: #fff;
+    margin: 10px;
+    font-size: 24px; /* Increased font size for better readability */
+    font-weight: bold; /* Bold digits for better visual impact */
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Grey for AC, DE, and Operator Buttons */
+form input:nth-child(1), /* AC */
+form input:nth-child(2), /* DE */
+form input:nth-child(3), /* % */
+form input:nth-child(4), /* / */
+form .operator {
+    background: #7f8c8d; /* Same grey background for AC, DE, and operator buttons */
+}
+
+form input:nth-child(1):hover, 
+form input:nth-child(2):hover, 
+form input:nth-child(3):hover, 
+form input:nth-child(4):hover, 
+form .operator:hover {
+    background: #5f6c71; /* Darker grey when hovering */
+}
+
+/* Targeting only Digit Buttons (0-9 and .) and applying orange color */
+form input[value="1"], 
+form input[value="2"], 
+form input[value="3"], 
+form input[value="4"], 
+form input[value="5"], 
+form input[value="6"], 
+form input[value="7"], 
+form input[value="8"], 
+form input[value="9"], 
+form input[value="0"], 
+form input[value="."] {
+    background: #fb9b00; /* Soft orange for number buttons */
+    font-family: 'Courier New', monospace; /* Monospace font for a digital look */
+}
+
+/* Hover effect for digit buttons */
+form input[value="1"]:hover, 
+form input[value="2"]:hover, 
+form input[value="3"]:hover, 
+form input[value="4"]:hover, 
+form input[value="5"]:hover, 
+form input[value="6"]:hover, 
+form input[value="7"]:hover, 
+form input[value="8"]:hover, 
+form input[value="9"]:hover, 
+form input[value="0"]:hover, 
+form input[value="."]:hover {
+    background: #cf7d01; /* Darker orange when hovering */
+} 
+
+/* Equal Button - Blue */
+form input.equal {
+    background: #3498db; /* Blue background for equal button */
+    width: 145px; /* Wider equal button */
+    grid-column: span 2; /* Span across two columns */
+}
+
+form input.equal:hover {
+    background: #2980b9; /* Darker blue on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    .calculator {
+        padding: 15px;
+    }
+
+    form input {
+        width: 55px; /* Slightly smaller buttons for mobile */
+        height: 55px;
+        font-size: 18px;
+    }
+
+    form .display input {
+        font-size: 36px;
+    }
+}

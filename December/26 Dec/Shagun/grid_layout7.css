@@ -1,0 +1,49 @@
+#container{
+    background-color: black;
+    height:260px;
+    width:500px;
+}
+#box{
+    padding:20px;
+    display:grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    gap:10px;
+
+}
+
+#item2{
+    padding:25px;
+    background-color: #0bdea6;
+}
+#item1{
+    padding:25px;
+    background-color: rgb(221, 96, 51);
+}
+#item3{
+    padding:80px;
+    background-color: rgb(180, 4, 4);
+}
+#item4{
+    padding:40px;
+    background-color: #256548;
+}
+#sub_box{
+    display:grid;
+    grid-template-columns: auto, auto;
+    grid-template-rows: auto auto;
+    gap:5px;
+}
+#sub_box div{
+    padding:20px;
+}
+#sub_item1{
+    background-color: #0bdea6;
+    grid-column-end: span 2;
+}
+#sub_item2{
+   background-color: #089a6c;
+}
+#sub_item3{
+    background-color: rgb(221, 96, 51);
+}

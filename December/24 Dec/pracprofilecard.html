@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Profile Card</title>
+  <link rel="stylesheet" href="pracprofilecard.css">
+</head>
+<body>
+
+<div class="card">
+
+  <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2FyZCUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D&w=1000&q=80" class="cover">
+
+  <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2FyZCUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D&w=1000&q=80" class="profile">
+    
+  <h2>Ann Lovefully</h2>
+
+  <p class="bio">
+    Designer, cat lover, bookworm apple pie fanatic  
+    and nature enthusiast :)
+  </p>
+
+  <p class="location">Hungary</p>
+
+  <div class="stats">
+    <div>
+      <h3>8,100</h3>
+      <p>Followers</p>
+    </div>
+    <div>
+      <h3>3,650</h3>
+      <p>Following</p>
+    </div>
+  </div>
+
+  <audio id="thankyouaudio" src="thankyou.wav"></audio>
+    <button id="followbtn">Follow</button>
+
+</div>
+<div>
+<script>
+   const follow=document.getElementById("followbtn");
+   const thanks=document.getElementById("thankyouaudio");
+   follow.addEventListener('click', function(){
+    if(follow.textContent=="Follow")
+   {
+    follow.textContent="Following";
+    thanks.play();
+   }
+   else{
+    follow.textContent="Follow";
+   }
+   });
+    </script>
+</div>
+</body>
+</html>

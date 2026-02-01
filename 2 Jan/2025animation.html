@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>2025 to 2026</title>
+
+<style>
+/* ---------- BASE ---------- */
+body {
+  background: #020617;
+  font-family: Arial, sans-serif;
+}
+
+.year {
+  display: flex;
+  gap: 10px;
+  margin-top: 80px;
+  justify-content: center;
+}
+
+/* ---------- COMMON DIGIT ---------- */
+.digit {
+  width: 100px;
+  height: 150px;
+  font-size: 100px;
+  color: white;
+  text-align: center;
+  line-height: 150px;
+  position: relative;
+}
+
+/* ---------- STATIC ---------- */
+.N2 { background: teal; }
+.N0 { background: olive; }
+
+/* ---------- TRANSITION HOLDER ---------- */
+.transition {
+  position: relative;
+  overflow: hidden;
+}
+
+/* ---------- FALLING 5 ---------- */
+.N5 {
+  background: maroon;
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  animation: fallDown 1.6s ease-in forwards;
+  animation-delay: 1.5s;
+}
+
+/* ---------- ENTERING 6 ---------- */
+.N6 {
+  background: navy;
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  opacity: 0;
+  animation: enterUp 1.6s ease-out forwards;
+  animation-delay: 2.6s;
+}
+
+/* ---------- KEYFRAMES ---------- */
+@keyframes fallDown {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(220px);
+    opacity: 0;
+  }
+}
+
+@keyframes enterUp {
+  from {
+    transform: translateY(-220px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="year">
+  <div class="digit N2">2</div>
+  <div class="digit N0">0</div>
+  <div class="digit N2">2</div>
+
+  <!-- TRANSITION DIGIT -->
+  <div class="digit transition">
+    <div class="digit N5">5</div>
+    <div class="digit N6">6</div>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Center the container */
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e3f9ff; /* Soft light blue background */
+}
+
+/* Calculator Box */
+.calculator {
+    background: linear-gradient(145deg, #2c3e50, #34495e); /* Gradient effect for depth */
+    padding: 20px;
+    border-radius: 15px; /* Slightly rounded corners */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Display Input */
+form .display {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+
+form .display input {
+    text-align: right;
+    flex: 1;
+    font-size: 45px;
+    padding: 15px;
+    color: #fff;
+    background: #1f2a34; /* Darker background for the display */
+    border-radius: 10px;
+    box-shadow: none;
+}
+
+/* General Button Styles */
+form input {
+    border: 0;
+    outline: 0;
+    width: 70px; /* Slightly larger buttons */
+    height: 70px;
+    border-radius: 10px;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition for hover */
+}
+
+/* Digit Buttons - Uniform Orange */
+form input[type="button"]:not(.operator):not(.equal) {
+    background: #ff9f00; /* Soft orange for all number buttons (iPhone-like) */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+form input[type="button"]:not(.operator):not(.equal):hover {
+    background: #e68900; /* Slightly darker orange when hovering */
+}
+
+/* Button Hover Effects (All buttons) */
+form input:hover {
+    background: #1abc9c; /* Green hover effect for most buttons */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Slight shadow on hover */
+}
+
+/* Equal Button */
+form input.equal {
+    width: 145px;
+    background: #3498db; /* Blue background for the equal button */
+    transition: background 0.3s ease;
+}
+
+form input.equal:hover {
+    background: #2980b9; /* Darker blue when hovering */
+}
+
+/* Operator Buttons */
+form .operator {
+    background: #33ffd8; /* Bright cyan for operators */
+    transition: background 0.3s ease;
+}
+
+form .operator:hover {
+    background: #1abc9c; /* Darker green for hover */
+}
+
+/* AC and DE Buttons */
+form input:nth-child(1),
+form input:nth-child(2) {
+    background: #95a5a6; /* Soft gray for AC/DE */
+}
+
+form input:nth-child(1):hover,
+form input:nth-child(2):hover {
+    background: #7f8c8d; /* Darker gray on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    .calculator {
+        padding: 15px;
+    }
+
+    form input {
+        width: 60px;
+        height: 60px;
+        font-size: 18px;
+    }
+
+    form .display input {
+        font-size: 35px;
+    }
+}

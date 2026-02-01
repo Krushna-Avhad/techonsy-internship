@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div {
+            background-color: rosybrown;
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px;
+            text-align: center;
+            position: relative;
+            animation-name: move;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;  
+        }
+        .box1 {
+            animation-timing-function: linear;
+        }
+        .box2 {
+            animation-timing-function: ease-in;
+        }
+        .box3 {
+            animation-timing-function: ease-out;
+        }
+        .box4 {
+            animation-timing-function: ease-in-out;
+        }
+        @keyframes move {
+            from{
+                left: 0px;
+                top: 0px;
+                background-color: red;
+            }
+            to{
+                left: 500px;
+                top: 0px;
+                background-color: blue;
+            }
+        }
+        
+    </style>
+    <title> Animation 2 </title>
+</head>
+<body>
+    <div class="box1"> Box 1 </div>
+    <div class="box2"> Box 2 </div>
+    <div class="box3"> Box 3 </div>
+    <div class="box4"> Box 4 </div>
+    </body>
+</html>

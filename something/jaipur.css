@@ -1,0 +1,79 @@
+/* ================= JAIPUR HERO ================= */
+.jaipur-hero {
+    background:
+        linear-gradient(
+            135deg,
+            rgba(209, 108, 125, 0.85),
+            rgba(209, 108, 125, 0.6)
+        ),
+        url("../images/jaipur.jpg") center/cover no-repeat;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.jaipur-hero p {
+    color: var(--jaipur-accent);
+}
+
+/* ================= CITY SECTIONS ================= */
+.jaipur-hero ~ .city-section {
+    background-color: var(--jaipur-light);
+}
+
+.jaipur-hero ~ .city-section h2 {
+    color: var(--jaipur-primary);
+}
+
+.jaipur-hero ~ .city-section h2::after {
+    content: "";
+    width: 60%;
+    height: 3px;
+    background: var(--jaipur-accent);
+    display: block;
+    margin-top: 8px;
+}
+
+.jaipur-hero ~ .city-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+/* ================= ATTRACTIONS ================= */
+.jaipur-hero ~ .city-section .attractions li {
+    border-left-color: var(--jaipur-secondary);
+    transition: transform 0.35s ease, box-shadow 0.35s ease, background 0.35s ease;
+}
+
+.jaipur-hero ~ .city-section .attractions li:hover {
+    transform: translateY(-8px);
+    background: linear-gradient(
+        135deg,
+        rgba(209, 108, 125, 0.15),
+        rgba(209, 108, 125, 0.05)
+    );
+    box-shadow: 0 10px 28px rgba(209, 108, 125, 0.25);
+}
+
+/* ================= BACK HOME BUTTON ================= */
+.jaipur-hero ~ .back-home a {
+    text-align: center;
+    display: inline-block;
+    color: #333;
+    background: var(--jaipur-primary);
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.jaipur-hero ~ .back-home a:hover {
+    background: var(--jaipur-secondary);
+    transform: scale(1.08);
+    box-shadow: 0 10px 30px rgba(209, 108, 125, 0.3);
+}

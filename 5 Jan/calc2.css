@@ -1,0 +1,88 @@
+/* Universal reset */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Center the calculator */
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e3f9ff;
+}
+
+/* Styling for the calculator */
+.calculator {
+    background: #3a4452;
+    padding: 30px; /* Increased padding */
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 480px; /* Increased max width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+/* Input display styling */
+.calculator form .display {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+
+.calculator form .display input {
+    text-align: right;
+    flex: 1;
+    font-size: 45px;
+    box-shadow: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* General button styling */
+.calculator form input {
+    border: 0;
+    outline: 0;
+    width: 70px; /* Fixed width for buttons */
+    height: 70px; /* Fixed height for buttons */
+    border-radius: 10px;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
+    background: transparent;
+    color: #fff;
+    margin: 5px; /* Reduced margin */
+    font-size: 22px; /* Adjusted font size */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect for buttons */
+.calculator form input:hover {
+    background-color: #33ffd8;
+    transform: scale(1.05); /* Slight scaling effect */
+}
+
+/* Equal button styling */
+.calculator form input.equal {
+    width: 150px; /* Make the equal button wider */
+}
+
+/* Operator button styling */
+.calculator form .operator {
+    background: #33ffd8;
+}
+
+/* Flex layout for rows of buttons */
+.calculator form div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  /* Ensure buttons are centered */
+    gap: 5px; /* Reduced gap between buttons */
+    width: 100%;
+}

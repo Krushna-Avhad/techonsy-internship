@@ -1,0 +1,16 @@
+body{
+    background-color: lightgrey;
+}
+
+.container {
+    background-color: white;
+    height: auto;
+    width: 300px;
+}
+
+.outer_div {
+    display: flex;
+    background-color: #2196F3;
+    height: 100px;
+    width: 300px;
+}

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Exact Multiplication Table</title>
+
+<style>
+body {
+    background: #eaf3f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+    border: 6px solid #6b4f3f;
+}
+
+th, td {
+    width: 55px;
+    height: 45px;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid #6b4f3f;
+}
+
+/* header */
+th {
+    background: #cfe8ef;
+}
+
+/* color levels (match image blocks) */
+.level-1  { background: #e6b07e; }
+.level-2  { background: #8b7cf6; }
+.level-3  { background: #e07a6f; }
+.level-4  { background: #9bc27e; }
+.level-5  { background: #f2df6c; }
+.level-6  { background: #c7a28c; }
+.level-7  { background: #7fb2e5; }
+.level-8  { background: #d8a1a1; }
+.level-9  { background: #9fd5e3; }
+.level-10 { background: #c9e37d; }
+</style>
+</head>
+
+<body>
+
+<table>
+<tr>
+    <th>X</th>
+    <th>1</th><th>2</th><th>3</th><th>4</th><th>5</th>
+    <th>6</th><th>7</th><th>8</th><th>9</th><th>10</th>
+</tr>
+
+<tr>
+    <th>1</th>
+    <td class="level-1">1</td>
+    <td class="level-2">2</td>
+    <td class="level-3">3</td>
+    <td class="level-4">4</td>
+    <td class="level-5">5</td>
+    <td class="level-6">6</td>
+    <td class="level-7">7</td>
+    <td class="level-8">8</td>
+    <td class="level-9">9</td>
+    <td class="level-10">10</td>
+</tr>
+
+<tr>
+    <th>2</th>
+    <td class="level-2">2</td>
+    <td class="level-2">4</td>
+    <td class="level-3">6</td>
+    <td class="level-4">8</td>
+    <td class="level-5">10</td>
+    <td class="level-6">12</td>
+    <td class="level-7">14</td>
+    <td class="level-8">16</td>
+    <td class="level-9">18</td>
+    <td class="level-10">20</td>
+</tr>
+
+<tr>
+    <th>3</th>
+    <td class="level-3">3</td>
+    <td class="level-3">6</td>
+    <td class="level-3">9</td>
+    <td class="level-4">12</td>
+    <td class="level-5">15</td>
+    <td class="level-6">18</td>
+    <td class="level-7">21</td>
+    <td class="level-8">24</td>
+    <td class="level-9">27</td>
+    <td class="level-10">30</td>
+</tr>
+
+<tr>
+    <th>4</th>
+    <td class="level-4">4</td>
+    <td class="level-4">8</td>
+    <td class="level-4">12</td>
+    <td class="level-4">16</td>
+    <td class="level-5">20</td>
+    <td class="level-6">24</td>
+    <td class="level-7">28</td>
+    <td class="level-8">32</td>
+    <td class="level-9">36</td>
+    <td class="level-10">40</td>
+</tr>
+
+<tr>
+    <th>5</th>
+    <td class="level-5">5</td>
+    <td class="level-5">10</td>
+    <td class="level-5">15</td>
+    <td class="level-5">20</td>
+    <td class="level-5">25</td>
+    <td class="level-6">30</td>
+    <td class="level-7">35</td>
+    <td class="level-8">40</td>
+    <td class="level-9">45</td>
+    <td class="level-10">50</td>
+</tr>
+
+<tr>
+    <th>6</th>
+    <td class="level-6">6</td>
+    <td class="level-6">12</td>
+    <td class="level-6">18</td>
+    <td class="level-6">24</td>
+    <td class="level-6">30</td>
+    <td class="level-6">36</td>
+    <td class="level-7">42</td>
+    <td class="level-8">48</td>
+    <td class="level-9">54</td>
+    <td class="level-10">60</td>
+</tr>
+
+<tr>
+    <th>7</th>
+    <td class="level-7">7</td>
+    <td class="level-7">14</td>
+    <td class="level-7">21</td>
+    <td class="level-7">28</td>
+    <td class="level-7">35</td>
+    <td class="level-7">42</td>
+    <td class="level-7">49</td>
+    <td class="level-8">56</td>
+    <td class="level-9">63</td>
+    <td class="level-10">70</td>
+</tr>
+
+<tr>
+    <th>8</th>
+    <td class="level-8">8</td>
+    <td class="level-8">16</td>
+    <td class="level-8">24</td>
+    <td class="level-8">32</td>
+    <td class="level-8">40</td>
+    <td class="level-8">48</td>
+    <td class="level-8">56</td>
+    <td class="level-8">64</td>
+    <td class="level-9">72</td>
+    <td class="level-10">80</td>
+</tr>
+
+<tr>
+    <th>9</th>
+    <td class="level-9">9</td>
+    <td class="level-9">18</td>
+    <td class="level-9">27</td>
+    <td class="level-9">36</td>
+    <td class="level-9">45</td>
+    <td class="level-9">54</td>
+    <td class="level-9">63</td>
+    <td class="level-9">72</td>
+    <td class="level-9">81</td>
+    <td class="level-10">90</td>
+</tr>
+
+<tr>
+    <th>10</th>
+    <td class="level-10">10</td>
+    <td class="level-10">20</td>
+    <td class="level-10">30</td>
+    <td class="level-10">40</td>
+    <td class="level-10">50</td>
+    <td class="level-10">60</td>
+    <td class="level-10">70</td>
+    <td class="level-10">80</td>
+    <td class="level-10">90</td>
+    <td class="level-10">100</td>
+</tr>
+</table>
+
+</body>
+</html>

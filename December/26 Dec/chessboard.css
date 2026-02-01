@@ -1,0 +1,20 @@
+.body{
+    background-color: #f0f0f0;
+}
+
+.chessboard {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    border: 2px solid #333;
+    width: 400px;
+    height: 400px;
+}
+
+.cellblack {
+    background-color: #627c47;
+}
+
+.cellwhite {
+    background-color: #eeeed2;
+}

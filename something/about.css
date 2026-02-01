@@ -1,0 +1,102 @@
+/* ================= ABOUT HERO ================= */
+.about-hero {
+    height: 70vh;
+    background:
+        linear-gradient(
+            rgba(28,31,74,0.7),
+            rgba(28,31,74,0.4)
+        ),
+        url("../images/about-hero.jpg") center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.about-hero h1 {
+    font-size: 56px;
+    letter-spacing: 2px;
+}
+
+.about-hero p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/* ================= ABOUT SECTION ================= */
+.premium-about {
+    padding: 80px 140px;
+    background: linear-gradient(to right, #F9F6F1, #FFF8E7);
+    text-align: center;
+}
+
+.premium-about h2 {
+    font-size: 36px;
+    color: #1C1F4A;
+    margin-bottom: 20px;
+}
+
+/* ================= VALUES CARDS ================= */
+.about-values {
+    padding: 80px 100px;
+    background-color: #F4F1EA;
+    text-align: center;
+}
+
+.about-values h2 {
+    font-size: 36px;
+    color: #C9A24D;
+    margin-bottom: 50px;
+}
+
+.values-container {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.value-card {
+    background: white;
+    flex: 1 1 250px;
+    max-width: 300px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.value-card h3 {
+    color: #1C1F4A;
+    margin-bottom: 15px;
+}
+
+.value-card p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.value-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 45px rgba(0,0,0,0.15);
+}
+
+/* ================= CTA SECTION ================= */
+.about-cta {
+    padding: 80px 100px;
+    background: linear-gradient(to right, #C9A24D, #F9F6F1);
+    text-align: center;
+    color: #1C1F4A;
+}
+
+.about-cta h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.about-cta p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+

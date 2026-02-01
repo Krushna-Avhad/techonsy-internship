@@ -1,0 +1,12 @@
+.box{
+    background-color: lightblue;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+}
+.box div{
+    background-color: coral;
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+}

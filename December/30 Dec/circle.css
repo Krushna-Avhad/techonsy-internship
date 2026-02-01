@@ -1,0 +1,72 @@
+body {
+  font-family: Arial;
+  background: #e8f6f8;
+  padding: 40px;
+}
+
+.container {
+  width: 520px;
+  height: 140px;
+  background: #bfe4ea;
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+}
+
+/* .circle {
+  width: 20px;
+  height: 20px;
+  background: #2f80ed;
+  border-radius: 50%;
+
+  /* ALL transitions together 
+  transition: 
+    transform 2.5s ease-in-out,
+    box-shadow 2.5s ease;
+} */
+
+/* .container:hover .circle {
+  transform: translateX(360px) scale(3) rotate(360deg);
+
+  /* DARK SHADOW ALL AROUND */
+  /* box-shadow: 0 0 40px 15px rgba(97, 90, 230, 0.7); */
+/* } */ 
+
+/* .container:hover .circle {
+  transform: translateX(360px) scale(3);
+
+  /* Motion trail + growth illusion 
+  box-shadow:
+    -30px 0 0 rgba(47, 128, 237, 0.6),
+    -60px 0 0 rgba(47, 128, 237, 0.5),
+    -90px 0 0 rgba(47, 128, 237, 0.4),
+    -120px 0 0 rgba(47, 128, 237, 0.3),
+    -150px 0 0 rgba(47, 128, 237, 0.2),
+    -180px 0 0 rgba(47, 128, 237, 0.1);
+} */
+
+
+.circle {
+  width: 20px;
+  height: 20px;
+  background: #2f80ed;
+  border-radius: 50%;
+
+  /* smooth transition */
+  transition: transform 2.5s ease-in-out,
+              filter 2.5s ease-in-out;
+
+  /* small shadow initially */
+  filter: drop-shadow(0 0 3px rgba(0,0,0,0.3));
+}
+
+.container:hover .circle {
+  /* move + grow smoothly */
+  transform: translateX(360px) scale(4);
+
+  /* shadow grows smoothly WITH circle */
+  filter: drop-shadow(0 0 14px rgba(0,0,0,0.55));
+}
+
+
+

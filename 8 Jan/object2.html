@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+
+    <h1> Details </h1>
+
+    <label>Name</label>
+    <input type="text" id="name"><br><br>
+
+    <label>Age</label>
+    <input type="text" id="age"><br><br>
+
+    <button type="button" onclick="store()">Submit</button>
+
+    <p id="demo"></p>
+
+    <script>
+        function store() {
+            // data call
+            let fname = document.getElementById("name").value;
+            let age = document.getElementById("age").value;
+
+            // object store
+            const details = {
+                first_name: fname,
+                age: age
+            };
+
+            // output print
+            document.getElementById("demo").innerHTML =
+                "Name: " + details.first_name + "<br>" +
+                "Age: " + details.age;
+        }
+    </script>
+
+</body>
+</html>

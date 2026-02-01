@@ -1,0 +1,415 @@
+/* ================= ROOT VARIABLES ================= */
+:root {
+    --brand-primary: #1C1F4A;
+    --brand-gold: #C9A24D;
+    --bg-light: #F9F6F1;
+    --text-dark: #2B2B2B;
+
+    /* Mumbai */
+    --mumbai-primary: #0B1C2D;
+    --mumbai-secondary: #1E3A8A;
+    --mumbai-accent: #C9A24D;
+    --mumbai-light: #F1F5F9;
+
+    /* Pune */
+    --pune-primary: #1E5631;
+    --pune-secondary: #4CAF50;
+    --pune-accent: #A4C639;
+    --pune-light: #F1F8F4;
+
+    /* Mysore */
+    --mysore-primary: #6A1B2B;
+    --mysore-secondary: #D4AF37;
+    --mysore-accent: #FFD700;
+    --mysore-light: #FDF6F0;
+
+    /* Jaipur */
+    --jaipur-primary: #D16C7D;
+    --jaipur-secondary: #FFB6C1;
+    --jaipur-accent: #FFD700;
+    --jaipur-light: #FFF1F6;
+
+    /* Varanasi */
+    --varanasi-primary: #D97706;
+    --varanasi-secondary: #FBC02D;
+    --varanasi-accent: #FFB74D;
+    --varanasi-light: #FFF8F0;
+}
+
+/* ================= RESET ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+    background-color: var(--brand-primary);
+    color: white;
+    padding: 18px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--brand-gold);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+.nav-links a:hover {
+    color: var(--brand-gold);
+}
+
+/* ================= FOOTER ================= */
+.footer {
+    background-color: var(--brand-primary);
+    color: white;
+    text-align: center;
+    padding: 25px 0;
+}
+
+/* ================= BUTTON ================= */
+.btn-primary {
+    background-color: var(--brand-gold);
+    color: var(--brand-primary);
+    padding: 12px 28px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* ================= CITY CARD & IMAGE COMMON ================= */
+.city-card {
+    flex: 1 1 250px;
+    max-width: 300px;
+    border-radius: 22px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.city-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.city-card:hover img {
+    transform: scale(1.08);
+}
+
+.city-title {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    font-size: 24px;
+    font-weight: 600;
+    text-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease;
+}
+
+.city-card:hover .city-title {
+    transform: translateY(-5px);
+}
+
+.city-img {
+    position: relative;
+    width: 100%;
+    height: 180px;
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.city-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.city-img::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    opacity: 0.75;
+}
+
+/* CITY LINK REMOVE UNDERLINE */
+.city-link {
+    text-decoration: none;
+    flex: 1;
+}
+
+/* ================= GALLERY COMMON ================= */
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.gallery-container a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.gallery-item {
+    width: 220px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.gallery-item p {
+    background: #ffffff;
+    margin: 0;
+    padding: 10px 0;
+    font-weight: 600;
+    color: inherit;
+}
+
+.gallery-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+/* =================== RESPONSIVE =================== */
+@media screen and (max-width: 992px) {
+    .gallery-item {
+        width: 180px;
+        height: auto;
+    }
+
+    .gallery-item img {
+        height: 130px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .gallery-item {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .gallery-container {
+        gap: 15px;
+        padding: 0 10px;
+    }
+
+    .gallery-item img {
+        height: 180px;
+    }
+}
+
+@media (max-width: 900px) {
+    .hero h1 { font-size: 36px; }
+    .hero p { font-size: 16px; }
+    .highlights-container, .city-container { flex-direction: column; gap: 20px; }
+}
+
+/* ================= RESET & BASE ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ================= NAVBAR ================= */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* ================= CITY CARD ================= */
+.city-card {
+    flex: 1 1 250px;
+    max-width: 300px;
+    border-radius: 22px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    color: white;
+    position: relative;
+    margin: 15px;
+}
+
+.city-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.city-card:hover img {
+    transform: scale(1.08);
+}
+
+.city-title {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    font-size: 24px;
+    font-weight: 600;
+    text-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease;
+}
+
+.city-card:hover .city-title {
+    transform: translateY(-5px);
+}
+
+.city-img {
+    position: relative;
+    width: 100%;
+    height: 180px;
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.city-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.city-img::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    opacity: 0.75;
+}
+
+.city-link {
+    text-decoration: none;
+    flex: 1;
+}
+
+/* ================= BUTTONS ================= */
+button,
+a.button {
+    padding: 10px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+/* ================= SECTIONS ================= */
+section {
+    padding: 60px 30px;
+}
+
+/* ================= HERO SECTION ================= */
+.hero {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: 700;
+    text-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+/* ================= ATTRACTIOSN LIST ================= */
+.attractions li {
+    list-style: none;
+    padding: 10px 0;
+    border-left: 5px solid #ccc;
+    transition: transform 0.35s ease, box-shadow 0.35s ease, background 0.35s ease;
+}
+
+.attractions li:hover {
+    transform: translateY(-8px);
+    background: rgba(0,0,0,0.05);
+    box-shadow: 0 10px 28px rgba(0,0,0,0.15);
+}
+
+/* ================= BACK HOME BUTTON ================= */
+.back-home a {
+    text-align: center;
+    display: inline-block;
+    color: white;
+    background: #333;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.back-home a:hover {
+    background: #555;
+    transform: scale(1.08);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}

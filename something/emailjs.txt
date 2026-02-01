@@ -1,0 +1,104 @@
+okay lets use email.js
+
+Awesome! Let's proceed with EmailJS to send form submissions directly to your email.
+
+Steps to Set Up EmailJS
+
+We'll go through the process of integrating EmailJS with your form, so when the user submits the form, it sends the form data to your email without needing the user to open their email client.
+
+1. Sign Up for EmailJS
+
+Go to EmailJS
+ and sign up for an account.
+
+Once signed up, follow these steps to get your User ID, Service ID, and Template ID:
+
+Create a service (e.g., Gmail, Outlook, etc.).
+
+Create an email template in your EmailJS dashboard.
+
+Copy the User ID, Service ID, and Template ID (we’ll need these in the JavaScript part).
+
+2. Include the EmailJS Script in Your HTML
+
+Add the EmailJS script to the <head> section of your HTML document:
+
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+
+This script will allow us to send emails directly from the browser.
+
+3. Modify Your HTML Form
+
+In your contact.html, ensure the form has an id so it can be targeted by JavaScript:
+
+<section class="contact-form-section">
+    <h2>Send Us a Message</h2>
+    <form class="contact-form" id="contactForm">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" id="message" rows="6" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn-primary">Send Message</button>
+    </form>
+</section>
+
+4. JavaScript for Handling Form Submission
+
+Now, let’s write the JavaScript code that will send the form data to your email using EmailJS.
+
+// Initialize EmailJS with your user ID
+emailjs.init('YOUR_USER_ID');  // Replace 'YOUR_USER_ID' with your actual User ID from EmailJS
+
+// Handle form submission
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault();  // Prevent the form from submitting the traditional way
+
+    // Send the form data to your email
+    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)  // Use the service and template IDs from EmailJS
+        .then(function(response) {
+            console.log('SUCCESS', response);
+            alert("Your message has been sent!");
+            document.getElementById("contactForm").reset();  // Reset the form after successful submission
+        }, function(error) {
+            console.log('FAILED', error);
+            alert("Failed to send message, please try again.");
+        });
+});
+
+5. What to Replace in the Code:
+
+YOUR_USER_ID: You’ll get this from your EmailJS account after signing up.
+
+YOUR_SERVICE_ID: This is the email service ID (Gmail, Outlook, etc.) you configure in EmailJS.
+
+YOUR_TEMPLATE_ID: This is the ID for the template you create in EmailJS (the email format you want to use).
+
+6. Create Email Template in EmailJS
+
+Go to Email Templates in the EmailJS dashboard.
+
+Create a template with placeholders for {{name}}, {{email}}, and {{message}}. This will allow you to dynamically inject the form data into the email body.
+
+Example template:
+
+<p><strong>Name:</strong> {{name}}</p>
+<p><strong>Email:</strong> {{email}}</p>
+<p><strong>Message:</strong> {{message}}</p>
+
+7. Test the Form
+
+Now that everything is set up:
+
+Open your webpage with the contact form.
+
+Fill out the form and click Send Message.
+
+The form should send the form data to the email address you configured in your EmailJS account.
+
+Recap:
+
+EmailJS will send the form data directly to your email when the user clicks Send Message.
+
+No backend needed: Everything happens on the frontend, and the email is sent automatically using EmailJS.
+
+Let me know if you need help with any specific part of this process, or if you'd like to proceed with testing it!

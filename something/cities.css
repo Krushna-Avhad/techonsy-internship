@@ -1,0 +1,140 @@
+/* ================= CITIES PAGE HERO ================= */
+.cities-hero {
+    height: 70vh;
+    background:
+        linear-gradient(
+            rgba(28, 31, 74, 0.7),
+            rgba(28, 31, 74, 0.4)
+        ),
+        url("../images/cities.webp") center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+/* ================= CITY CARDS ================= */
+.city-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+/* CITY CARD */
+.city-card {
+    flex: 1 1 250px;
+    max-width: 300px;
+    border-radius: 22px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.city-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+    border-radius: 16px;
+}
+
+.city-card:hover img {
+    transform: scale(1.08);
+}
+
+/* CITY TITLE ON IMAGE */
+.city-card h3 {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    font-size: 24px;
+    font-weight: 600;
+    text-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+/* CITY LINK */
+.city-link {
+    text-decoration: none;
+    flex: 1;
+}
+
+/* CITY CARD HOVER EFFECT */
+.city-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.25);
+}
+
+/* IMAGE TITLE ANIMATION */
+.city-title {
+    transition: transform 0.3s ease;
+}
+
+.city-card:hover .city-title {
+    transform: translateY(-5px);
+}
+
+/* CITY IMAGE OVERLAY */
+.city-img {
+    position: relative;
+    width: 100%;
+    height: 180px;
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.city-img::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    opacity: 0.75;
+    transition: background 0.3s ease;
+}
+
+/* CITY-SPECIFIC OVERLAYS */
+.mumbai .city-img::after {
+    background: linear-gradient(to bottom, rgba(11,28,45,0.2), rgba(11,28,45,0.9));
+}
+
+.pune .city-img::after {
+    background: linear-gradient(to bottom, rgba(30,86,49,0.2), rgba(30,86,49,0.9));
+}
+
+.mysore .city-img::after {
+    background: linear-gradient(to bottom, rgba(106,27,43,0.2), rgba(106,27,43,0.95));
+}
+
+.jaipur .city-img::after {
+    background: linear-gradient(to bottom, rgba(209,108,125,0.2), rgba(209,108,125,0.95));
+}
+
+.varanasi .city-img::after {
+    background: linear-gradient(to bottom, rgba(217,119,6,0.2), rgba(30,58,138,0.95));
+}
+
+/* CITY BUTTONS */
+.city-card button {
+    margin-top: 18px;
+    padding: 10px 22px;
+    border: none;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.mumbai button { background: #C4C7CC; }
+.pune button { background: #A4C639; }
+.mysore button { background: #D4AF37; }
+.jaipur button { background: #FFF1D6; color: #333; }
+.varanasi button { background: #1E3A8A; color: white; }
+
+/* CITY CARD BUTTON HOVER EFFECT */
+.city-card button:hover {
+    transform: scale(1.05);
+}

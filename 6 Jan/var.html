@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let age = 18;
+        let myname = "Krushna Avhad";
+        let marks = 99.9;
+        document.write("Name: " + myname + "<br>");
+        document.write("Age: " + age + "<br>");
+        document.write("Marks: " + marks + "<br>");
+        document.write("Name: " + myname + " Age: " + age + " Marks: " + marks + "<br>");
+        document.write(`Name: ${myname} Age: ${age} Marks: ${marks}<br>`);
+
+        let a = 10;
+        let b = 20;
+        document.write(`a: ${a} b: ${b}<br>`);
+        document.write("a + b = " + (a + b) + "<br>");
+        document.write("a - b = " + (a - b) + "<br>");
+        document.write("a * b = " + (a * b) + "<br>");
+        document.write("a / b = " + (a / b) + "<br>");
+        document.write("a % b = " + (a % b) + "<br>");
+
+        let userage = Number(prompt("Enter your age: "));
+if(userage >= 18){
+    console.log("You are eligible to vote.");
+}
+else{
+    console.log("You are not eligible to vote. ");
+}
+    </script>

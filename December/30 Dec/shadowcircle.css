@@ -1,0 +1,56 @@
+body{
+    background:linear-gradient(to left,rgb(19, 169, 219),rgb(91, 229, 227),rgb(236, 19, 236));
+}
+
+
+.container{
+    display:flex;
+    justify-content: center;
+
+    padding: 130px;
+    margin-top: 180px;
+    
+
+}
+
+/* faint circles */
+.trail{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(74, 157, 248, 0.3);
+    transition: transform 1s ease;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    background-color: rgb(158, 158, 224);
+}
+
+/* different delays / positions */
+.t1{ transform: scale(1) translateX(0); }
+.t2{ transform: scale(1.5) translateX(30px); }
+.t3{ transform: scale(2.2) translateX(60px); }
+.t4{ transform: scale(3) translateX(100px); }
+
+
+.circle1{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    background-color: blue;
+     transition: transform 0.8s ease;
+}
+
+
+.circle1:hover{
+    transform: scale(4) translateX(75px); /* 50px → 200px */
+    
+}
+
+.container:hover .trail{
+    transform: scale(4) translateX(75px);
+}

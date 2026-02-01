@@ -1,0 +1,64 @@
+body {
+  background: #f2f2f2;
+  font-family: Arial;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  width: 300px;
+  background: white;
+  text-align: center;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.cover {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.profile {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin-top: -45px;
+  border: 3px solid white;
+}
+
+h2 {
+  margin: 10px 0;
+}
+
+.bio {
+  font-size: 14px;
+  color: gray;
+  padding: 0 10px;
+}
+
+.location {
+  color: gray;
+  margin: 10px 0;
+}
+
+.stats {
+  display: flex;
+  border-top: 1px solid #ddd;
+}
+
+.stats div {
+  flex: 1;
+  padding: 10px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background: #5fbf7a;
+  color: white;
+  font-size: 16px;
+}

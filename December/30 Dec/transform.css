@@ -1,0 +1,36 @@
+
+.original{
+    width: 200px;
+    height: 200px;
+    background-color: aquamarine;
+    border-radius: 50%;
+}
+
+.copy{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(123, 195, 84);
+    /* Transform Properties
+    transform: translate(50px, 60px);
+    transform: rotate(50deg);
+    transform: scale(1,2);
+    transform: scaleX(2);
+    transform: scaleY(2);
+    transform: skew(); */
+
+    /* Transition Properties */
+    transition: 1.5s;
+
+}
+
+.copy:hover{
+    /* transform:translate(50px, 60px) */
+    transform: rotate(50deg);
+    background-color: rgb(181, 53, 104);
+}
+
+.original:hover{
+    transform: rotate(50deg);
+    background-color: rgb(181, 53, 104);
+}
+

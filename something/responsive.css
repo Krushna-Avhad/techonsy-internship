@@ -1,0 +1,213 @@
+/* ================= MOBILE STYLES (up to 767px) ================= */
+@media only screen and (max-width: 767px) {
+
+    /* General Layout Adjustments */
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav a {
+        padding: 12px;
+        font-size: 1rem;
+    }
+
+    /* Adjust Button Sizes */
+    .button {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+
+    /* Card Layouts */
+    .card {
+        width: 100%;
+        padding: 15px;
+    }
+
+    /* Form Adjustments */
+    .form-group {
+        width: 100%;
+    }
+
+    input, textarea, select {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    /* Modals */
+    .modal {
+        width: 90%;
+    }
+
+    /* Hide Some Large Elements for Mobile */
+    .sidebar {
+        display: none;
+    }
+}
+
+/* ================= TABLET STYLES (768px to 1024px) ================= */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+    /* General Layout Adjustments */
+    .container {
+        width: 85%;
+    }
+
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .nav {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .nav a {
+        padding: 10px;
+        font-size: 1.1rem;
+    }
+
+    /* Adjust Button Sizes */
+    .button {
+        padding: 15px 30px;
+        font-size: 1.1rem;
+    }
+
+    /* Card Layouts */
+    .card {
+        width: 45%;
+        margin: 10px 0;
+        padding: 20px;
+    }
+
+    /* Form Adjustments */
+    .form-group {
+        width: 100%;
+    }
+
+    input, textarea, select {
+        font-size: 1.1rem;
+        padding: 12px;
+    }
+
+    /* Modals */
+    .modal {
+        width: 70%;
+    }
+
+    /* Sidebar */
+    .sidebar {
+        width: 25%;
+        padding: 20px;
+    }
+}
+
+/* ================= DESKTOP STYLES (1025px and up) ================= */
+@media only screen and (min-width: 1025px) {
+
+    /* General Layout Adjustments */
+    .container {
+        width: 80%;
+        padding: 40px;
+    }
+
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .nav {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .nav a {
+        padding: 15px;
+        font-size: 1.2rem;
+    }
+
+    /* Adjust Button Sizes */
+    .button {
+        padding: 15px 40px;
+        font-size: 1.2rem;
+    }
+
+    /* Card Layouts */
+    .card {
+        width: 30%;
+        margin: 20px;
+        padding: 30px;
+    }
+
+    /* Form Adjustments */
+    .form-group {
+        width: 100%;
+    }
+
+    input, textarea, select {
+        font-size: 1.2rem;
+        padding: 14px;
+    }
+
+    /* Modals */
+    .modal {
+        width: 50%;
+    }
+
+    /* Sidebar */
+    .sidebar {
+        width: 20%;
+        padding: 30px;
+    }
+}
+
+/* ================= CUSTOM STYLES FOR LARGER SCREENS (1400px and up) ================= */
+@media only screen and (min-width: 1400px) {
+
+    /* General Layout Adjustments */
+    .container {
+        width: 75%;
+    }
+
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .nav a {
+        padding: 20px;
+        font-size: 1.3rem;
+    }
+
+    /* Adjust Button Sizes */
+    .button {
+        padding: 18px 45px;
+        font-size: 1.3rem;
+    }
+
+    /* Card Layouts */
+    .card {
+        width: 22%;
+        margin: 25px;
+        padding: 40px;
+    }
+
+    /* Form Adjustments */
+    input, textarea, select {
+        font-size: 1.3rem;
+        padding: 15px;
+    }
+}

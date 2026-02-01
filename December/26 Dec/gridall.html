@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>9 Layouts Grid</title>
+
+<style>
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* PAGE BACKGROUND */
+body {
+    background: #000;
+    height: 100vh;
+    padding: 15px;
+}
+
+/* MAIN 3x3 GRID */
+.main-grid {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 15px;
+}
+
+/* PAGE */
+.page {
+    background: #2b2f3a;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* FAKE BROWSER BAR */
+.header {
+    height: 14px;
+    background: #fff;
+    border-radius: 7px;
+    margin-bottom: 10px;
+}
+
+/* CONTENT AREA */
+.content {
+    flex: 1;
+    display: grid;
+    gap: 10px;
+}
+
+/* COLORS */
+.red { background:#ff6b5e; }
+.orange { background:#ffae6d; }
+.green { background:#00a884; }
+.teal { background:#1abc9c; }
+.mint { background:#3ddcba; }
+
+/* BLOCK */
+.block {
+    border-radius: 5px;
+}
+
+/* ---------- INDIVIDUAL LAYOUTS ---------- */
+
+/* Layout 1 */
+.l1 {
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+
+/* Layout 2 */
+.l2 {
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.l2 .big { grid-row: span 2; }
+
+/* Layout 3 */
+.l3 {
+    grid-template-rows: auto 1fr auto;
+}
+
+/* Layout 4 */
+.l4 {
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto 1fr auto;
+}
+.l4 .wide { grid-column: span 2; }
+
+/* Layout 5 (many blocks) */
+.l5 {
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+
+/* Layout 6 */
+.l6 {
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(4,1fr);
+}
+.l6 .tall { grid-row: span 4; }
+
+/* Layout 7 */
+.l7 {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+}
+
+/* Layout 8 */
+.l8 {
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: auto auto 1fr;
+}
+.l8 .wide { grid-column: span 3; }
+
+/* Layout 9 */
+.l9 {
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto 1fr auto;
+}
+.l9 .wide { grid-column: span 2; }
+
+</style>
+</head>
+
+<body>
+
+<div class="main-grid">
+
+    <!-- PAGE 1 -->
+    <div class="page">
+        <div class="header"></div>
+        <div class="content l1">
+            <div class="block red"></div>
+            <div class="block orange"></div>
+            <div class="block orange"></div>
+            <div class="block green"></div>
+            <div class="block teal"></div>
+            <div class="block mint"></div>
+        </div>
+    </div>
+
+    <!-- PAGE 2 -->
+    <div class="page">
+        <div class="header"></div>
+        <div class="content l2">
+            <div class="block red big"></div>
+            <div class="block orange"></div>
+            <div class="block green"></div>
+            <div class="block teal"></div>
+        </div>
+    </div>
+
+    <!-- PAGE 3 -->
+    <div class="page">
+        <div class="header"></div>
+        <div class="content l3">
+            <div class="block orange"></div>
+            <div class="block red"></div>
+            <div class="block teal"></div>
+        </div>
+    </div>
+
+    <!-- PAGE 4 -->
+    <div class="page">
+        <div class="header"></div>
+        <div class="content l4">
+            <div class="block orange wide"></div>
+            <div class="block green"></div>
+            <div class="block teal"></div>
+            <div class="block orange wide"></div>
+        </div>
+    </div>
+
+    <!-- PAGE 5 -->
+    <div class="page">
+        <div class="header"></div>
+        <div class="content l5">
+            <div class="block green"></div>
+            <div class="block orange"></div>
+            <div class="block teal"></div>
+            <div class="block red"></div>
+            <div class="block mint"></div>
+            <div class="block orange"></div>
+            <div class="block orange"></div>
+            <div class="block green"></div>
+            <div class="block orange"></div>
+            <div class="block teal"></div>
+            <div class="block orange"></div>
+            <div class="block red"></div>
+            <div class="block green"></div>
+            <div class="block red"></div>
+            <div class="block mint"></div>
+            <div class="block orange"></div>
+            <div class="block green"></div>
+            <div class="block mint"></div>
+        </div>
+    </div>
+
+    <!-- PAGE 6 -->
+    <div class="page">
+        <div class="header"></div>
+        <div class="content l6">
+            <div class="block red wide"></div>
+            <div class="block teal"></div>
+            <div class="block mint"></div>
+            <div class="block orange"></div>
+            <div class="block green tall"></div>
+            <div class="block mint"></div>
+            <div class="block red"></div>
+        </div>
+    </div>
+
+    <!-- PAGE 7 -->
+    <div class="page">
+        <div class="header"></div>
+        <div class="content l7">
+            <div class="block orange"></div>
+            <div class="block mint"></div>
+            <div class="block red"></div>
+            <div class="block teal"></div>
+        </div>
+    </div>
+
+    <!-- PAGE 8 -->
+    <div class="page">
+        <div class="header"></div>
+        <div class="content l8">
+            <div class="block red"></div>
+            <div class="block orange"></div>
+            <div class="block mint"></div>
+            <div class="block teal"></div>
+            <div class="block green"></div>
+            <div class="block orange"></div>
+            <div class="block red"></div>
+            <div class="block orange wide"></div>
+            <div class="block mint wide"></div>
+        </div>
+    </div>
+
+    <!-- PAGE 9 -->
+    <div class="page">
+        <div class="header"></div>
+        <div class="content l9">
+            <div class="block orange wide"></div>
+            <div class="block green"></div>
+            <div class="block mint"></div>
+            <div class="block red"></div>
+            <div class="block orange"></div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

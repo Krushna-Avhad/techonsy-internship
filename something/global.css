@@ -1,0 +1,55 @@
+/* ================= ROOT VARIABLES ================= */
+:root {
+    --brand-primary: #1C1F4A;
+    --brand-gold: #C9A24D;
+    --bg-light: #F9F6F1;
+    --text-dark: #2B2B2B;
+
+    /* Mumbai */
+    --mumbai-primary: #0B1C2D;   /* Deep Navy */
+    --mumbai-secondary: #1E3A8A; /* Coastal Blue */
+    --mumbai-accent: #C9A24D;    /* Gold */
+    --mumbai-light: #F1F5F9;     /* Soft Light */
+
+    /* Pune */
+    --pune-primary: #1E5631;    /* Deep Green */
+    --pune-secondary: #4CAF50;  /* Fresh Green */
+    --pune-accent: #A4C639;     /* Youth Lime */
+    --pune-light: #F1F8F4;      /* Soft Green Background */
+
+    /* Mysore */
+    --mysore-primary: #6A1B2B;    /* Royal Maroon */
+    --mysore-secondary: #D4AF37;  /* Gold Accent */
+    --mysore-accent: #FFD700;     /* Golden highlight */
+    --mysore-light: #FDF6F0;      /* Soft warm background */
+
+    /* Jaipur */
+    --jaipur-primary: #D16C7D;    /* Royal Pink */
+    --jaipur-secondary: #FFB6C1;  /* Soft Pink Accent */
+    --jaipur-accent: #FFD700;     /* Gold */
+    --jaipur-light: #FFF1F6;      /* Soft Background */
+
+    /* Varanasi */
+    --varanasi-primary: #D97706;    /* Deep Saffron */
+    --varanasi-secondary: #FBC02D;  /* Golden Accent */     
+    --varanasi-accent: #FFB74D;     /* Light Orange */
+    --varanasi-light: #FFF8F0;      /* Soft Warm Background */
+}
+
+/* ================= RESET ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}

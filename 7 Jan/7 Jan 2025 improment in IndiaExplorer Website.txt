@@ -1,0 +1,43 @@
+7 Jan 2025 improment in IndiaExplorer Website
+
+1. trip planner with JS logic
+2. footer
+3. slider
+4. explore 
+5. wiki content 
+6. button
+7. ai bot 
+8. make my trip ui
+9. ads like 10,000 whole trip
+10. blogs
+11. Login
+12. signup
+13. admin panel
+
+PRIORITY BASIS:
+1. Footer - done 
+2. Wiki Content
+3. Itenary in city pages
+4. Travel Packages 
+5. whole booking chain 
+6. Login and Register
+
+css/style.css
+
+cities.html
+
+about.html
+
+contact.html
+
+trip-planner.html
+
+mumbai.html
+
+pune.html
+
+mysore.html
+
+jaipur.html
+
+varanasi.html

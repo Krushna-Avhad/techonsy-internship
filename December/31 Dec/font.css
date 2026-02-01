@@ -1,0 +1,46 @@
+
+.h1 {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.h2 {
+  font-family: "Mountains of Christmas", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.h5 {
+  font-family: "Bebas Neue", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  background-color: black;
+}
+
+
+.h4 {
+  font-family: "Dancing Script", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  background-color: black
+}
+
+
+.h3 {
+  font-family: "Great Vibes", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  background-color: black
+}
+
+.span.material-symbols-outlined {
+  background-color: black;
+}

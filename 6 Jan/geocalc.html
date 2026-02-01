@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Geometric Calculator</title>
+    <link rel="stylesheet" href="geocalc.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Geometric Calculator</h1>
+
+        <!-- Shape Selection -->
+        <select id="shape">
+            <option value="">Select Shape</option>
+            <option value="square">Square</option>
+            <option value="rectangle">Rectangle</option>
+            <option value="circle">Circle</option>
+            <option value="triangle">Triangle</option>
+        </select>
+
+        <!-- Dynamic Inputs -->
+        <div id="inputs"></div>
+
+        <!-- Calculate Button -->
+        <button onclick="calculate()">Calculate</button>
+
+        <!-- Result -->
+        <p id="result"></p>
+    </div>
+
+    <script src="geocalc.js"></script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e3f9ff; 
+}
+
+.calculator {
+    background: #3a4452; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+
+form .display {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+
+form .display input {
+    text-align: right;
+    flex: 1;
+    font-size: 55px; 
+    color: #fff;
+    background: #7f8c8d; 
+    border-radius: 10px;
+    box-shadow: none;
+    padding: 10px; 
+    margin: 5px; 
+    letter-spacing: 2px; 
+}
+
+
+.calculator form input {
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
+    background: transparent;
+    color: #fff;
+    margin: 10px;
+    font-size: 24px;
+    font-weight: bold; 
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+form input:nth-child(1), 
+form input:nth-child(2), 
+form input:nth-child(3), 
+form input:nth-child(4), 
+form .operator {
+    background: #7f8c8d; 
+}
+
+form input:nth-child(1):hover, 
+form input:nth-child(2):hover, 
+form input:nth-child(3):hover, 
+form input:nth-child(4):hover, 
+form .operator:hover {
+    background: #5f6c71; 
+}
+
+
+form input[value="1"], 
+form input[value="2"], 
+form input[value="3"], 
+form input[value="4"], 
+form input[value="5"], 
+form input[value="6"], 
+form input[value="7"], 
+form input[value="8"], 
+form input[value="9"], 
+form input[value="0"], 
+form input[value="."] {
+    background: #fb9b00; 
+    /* font-family: 'Courier New', monospace;  */
+}
+
+/* Hover effect for digit buttons */
+form input[value="1"]:hover, 
+form input[value="2"]:hover, 
+form input[value="3"]:hover, 
+form input[value="4"]:hover, 
+form input[value="5"]:hover, 
+form input[value="6"]:hover, 
+form input[value="7"]:hover, 
+form input[value="8"]:hover, 
+form input[value="9"]:hover, 
+form input[value="0"]:hover, 
+form input[value="."]:hover {
+    background: #cf7d01; 
+} 
+
+
+form input.equal {
+    background: #3498db; 
+    width: 145px; 
+    grid-column: span 2; 
+}
+
+form input.equal:hover {
+    background: #2980b9; 
+}
+
+
+@media (max-width: 500px) {
+    .calculator {
+        padding: 15px;
+    }
+
+    form input {
+        width: 55px; 
+        height: 55px;
+        font-size: 18px;
+    }
+
+    form .display input {
+        font-size: 36px;
+    }
+}
