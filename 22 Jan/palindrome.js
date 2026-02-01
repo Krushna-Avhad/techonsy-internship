@@ -9,4 +9,5 @@
         }
         console.log(temp==rev?"Palindrome":"Not a Palindrome");
 
-buzz Number happy sad leap neon range of prime lcm hcm duck 
+// buzz Number happy sad leap neon range of prime lcm hcm duck 
+
