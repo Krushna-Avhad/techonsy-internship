@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <!-- <input id="stName" type="text">
+    <button id="btn">Add</button>
+    <ul id="students"></ul> -->
+    Name <input id="name" type="text"><br>
+    Subject <input id="sub" type="text"><br>
+    Marks <input id="marks" type="number"><Br>
+    <button id="btn">Submit</button>
+    <button id="details">Check Details</button><br>
+    <table id="tab" border="1">
+    </table>
+    <script>
+        // document.getElementById("btn").addEventListener("click",()=>{
+        // let name = document.getElementById("stName").value;
+        // let ul = document.getElementById("students");
+        // let arr=[];
+        // arr.push(name);
+        // for(let i=0;i<arr.length;i++){
+        //    let item=document.createElement("li");
+        //     item.innerText=arr[i];
+        //     ul.appendChild(item);
+        // }
+        // })
+  let names = [];
+  let subs = [];
+  let marksArr = [];
+
+  document.getElementById("btn").addEventListener("click", () => {
+    names.push(document.getElementById("name").value);
+    subs.push(document.getElementById("sub").value);
+    marksArr.push(document.getElementById("marks").value);
+
+    document.getElementById("name").value = "";
+    document.getElementById("sub").value = "";
+    document.getElementById("marks").value = "";
+  });
+  let table = document.getElementById("tab");
+
+  document.getElementById("details").addEventListener("click", () => {
+    table.innerHTML = ""; 
+
+    let header = document.createElement("tr");
+
+    let th = document.createElement("th");
+    th.innerText = "Sr.";
+    let th1 = document.createElement("th");
+    th1.innerText = "Name";
+
+    let th2 = document.createElement("th");
+    th2.innerText = "Subject";
+
+    let th3 = document.createElement("th");
+    th3.innerText = "Marks";
+    header.appendChild(th);
+    header.appendChild(th1);
+    header.appendChild(th2);
+    header.appendChild(th3);
+    table.appendChild(header);
+ let count =1;
+    for (let i = 0; i < names.length; i++) {
+      let row = document.createElement("tr");
+
+      let td = document.createElement("td");
+      td.innerText=count;
+
+      let td1 = document.createElement("td");
+      td1.innerText = names[i];
+
+      let td2 = document.createElement("td");
+      td2.innerText = subs[i];
+
+      let td3 = document.createElement("td");
+      td3.innerText = marksArr[i];
+
+      row.appendChild(td);
+      row.appendChild(td1);
+      row.appendChild(td2);
+      row.appendChild(td3);
+        count++;
+      table.appendChild(row);
+
+    }
+  });
+</script>
+
+</body>
+</html>

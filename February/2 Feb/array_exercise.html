@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Operations</title>
+</head>
+<body>
+    Name <input type="text" id="nameInput" placeholder="Enter name">
+    Marks <input type="number" id="marksInput" placeholder="Enter marks">
+    Subject <input type="text" id="subjectInput" placeholder="Enter subject">
+    <button onclick="addStudent()">Add Student</button>
+    <button onclick="displayStudents()">Display Students Row</button>
+    <h2>Student Records</h2>
+
+    <script>
+    let student = [];
+
+    function addStudent(){
+        let name = document.getElementById("nameInput").value;
+        let marks = document.getElementById("marksInput").value;
+        let subject = document.getElementById("subjectInput").value;
+
+        let studentRecord = {
+            name: name,
+            marks: marks,
+            subject: subject
+        };
+
+        student.push(studentRecord);
+        alert("Student Added");
+    }
+
+    function displayStudents(){
+        let table = "<table border='1'>" +
+                    "<tr>" +
+                    "<th>Sr. No.</th>" +
+                    "<th>Name</th>" +
+                    "<th>Marks</th>" +
+                    "<th>Subject</th>" +
+                    "</tr>";
+
+        for(let i = 0; i < student.length; i++){
+            table += "<tr>" +
+                     "<td>" + (i + 1) + "</td>" +
+                     "<td>" + student[i].name + "</td>" +
+                     "<td>" + student[i].marks + "</td>" +
+                     "<td>" + student[i].subject + "</td>" +
+                     "</tr>";
+        }
+
+        table += "</table>";
+        document.body.innerHTML += table;
+    }
+    
+    </script>
+
+
+    <!-- <script>
+        let student = [];
+        function addStudent(){
+            let name = document.getElementById("nameInput").value;
+            let marks = document.getElementById("marksInput").value;
+            let subject = document.getElementById("subjectInput").value;
+            let studentRecord = {
+                name: name,
+                marks: marks,
+                subject: subject
+            }
+            student.push(studentRecord);
+            alert("Student Added");
+        }
+
+        function displayStudents(){
+            let table = "<table border=1> <tr> <th> Name </th> <th> Marks </th> <th> Subject </th> </tr>";
+                for(let i=0; i<student.length; i++){
+                    table += "<tr> <td>" + student[i].name + "</td> <td>" + student[i].marks + "</td> <td>" +student[i].subject + "</td> </tr>";
+
+                }
+                table += "</table>";
+                document.body.innerHTML += table;
+        }
+    </script> -->
+
+</body>
+</html>
