@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Operations</title>
+</head>
+<body>
+    <!-- <h1>Student List</h1>
+    <ul id="List">
+    </ul>
+    <script>
+        let students = ["Alice", "Bob", "Charlie"];
+        let ul= document.getElementById("List");
+        for (let i=0; i<students.length; i++) {
+            ul.innerHTML += "<li>" + students[i] + "</li>";
+            // // let li= document.createElement("li");
+            // // li.textContent= students[i];
+            // // ul.appendChild(li);
+        }
+    </script> -->
+
+    <h1>Student Info</h1>
+    <input type="text" id="item" placeholder="Enter student name">
+    <button onclick="addItem()">Add Student</button>
+    <p id="list"></p>
+
+    <script>
+        let students = [];
+        function addItem() {
+            let val = document.getElementById("item").value;
+            students.push(val);
+            // document.getElementById("list").innerText = students.join(", ");
+            document.getElementById("list").innerHTML = students.join("<br>");
+        }
+    </script>
+
+</body>
+</html>
