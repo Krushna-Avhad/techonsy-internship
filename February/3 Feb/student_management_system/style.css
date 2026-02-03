@@ -1,0 +1,30 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+form input, button {
+  margin: 5px;
+  padding: 8px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.A { background-color: #c8e6c9; }
+.B { background-color: #fff9c4; }
+.C { background-color: #ffe0b2; }
+.Fail { background-color: #ffcdd2; }
+
+.pagination {
+  margin-top: 15px;
+}
