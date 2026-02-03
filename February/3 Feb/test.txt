@@ -1,1 +1,18 @@
 test
+
+
+
+student management system
+add
+filter - below 35 is fail, above 35 tiill 70 is average, above 75 is excellend
+when taping on a should see all exelent studemts with all student details same goes with b and c
+3-4 sub marks and then total marks then covert to percentage, then update and delete.
+maximum marks in a,b,c using sort 
+add pagination 
+ratio of pass and ratio of fail
+
+
+1, crud
+addupdate
+delete
+readable form 
