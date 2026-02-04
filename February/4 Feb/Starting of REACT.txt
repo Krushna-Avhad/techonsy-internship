@@ -1,0 +1,41 @@
+Starting of REACT:
+
+async
+sync
+callback
+promises
+DOM
+math - inbuilt
+string - inbuilt
+date - inbuilt
+function
+object
+array
+document.object
+nested object
+getelementbyid
+functional programming
+map 
+callback
+high order function 
+
+hw: arr > triple > odd > multiplication 
+use only 2 array one for arr and one for multiplication
+arr ----> multiplication
+arr ---->
+array restructuring
+array structuring 
+array destructuring 
+rest operator
+
+structured object
+destructured object
+
+Task for homework:
+
+text converter - on string particularly 
+initialize
+capitalise
+count
+tolowercase
+touppercase
