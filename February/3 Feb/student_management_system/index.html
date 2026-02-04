@@ -1,51 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>Student Management System</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <h1>Student Management System</h1>
 
 <form id="studentForm">
-  <input type="text" id="name" placeholder="Student Name" required />
-  <input type="number" id="sub1" placeholder="Subject 1" min="0" max="100" required />
-  <input type="number" id="sub2" placeholder="Subject 2" min="0" max="100" required />
-  <input type="number" id="sub3" placeholder="Subject 3" min="0" max="100" required />
+  <input id="name" placeholder="Name" required>
+  <input id="s1" type="number" placeholder="Subject 1" required>
+  <input id="s2" type="number" placeholder="Subject 2" required>
+  <input id="s3" type="number" placeholder="Subject 3" required>
   <button type="submit">Add / Update</button>
 </form>
 
-<div>
-  <button onclick="filterByGrade('A')">A</button>
-  <button onclick="filterByGrade('B')">B</button>
-  <button onclick="filterByGrade('C')">C</button>
-  <button onclick="filterByGrade('Fail')">Fail</button>
-  <button onclick="resetView()">All</button>
+<div class="filters">
+  <button onclick="filterStudents('all')">All</button>
+  <button onclick="filterStudents('fail')">Fail</button>
+  <button onclick="filterStudents('average')">Average</button>
+  <button onclick="filterStudents('excellent')">Excellent</button>
 </div>
 
-<table border="1">
+<p id="ratio"></p>
+
+<table>
   <thead>
     <tr>
       <th>Name</th>
       <th>Total</th>
-      <th>Percentage</th>
-      <th>Grade</th>
+      <th>%</th>
+      <th>Result</th>
       <th>Actions</th>
     </tr>
   </thead>
   <tbody id="tableBody"></tbody>
 </table>
 
-<div>
-  <button onclick="prevPage()">Prev</button>
-  <span id="pageNo"></span>
-  <button onclick="nextPage()">Next</button>
-</div>
-
-<div id="ratio"></div>
+<div id="pagination"></div>
 
 <script src="script.js"></script>
-
 </body>
 </html>
