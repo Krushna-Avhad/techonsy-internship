@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        .product {
+        border: 1px solid #ddd;
+        padding: 15px;
+        margin: 10px 0;
+        border-radius: 8px;
+        background: #fafafa;
+        }
+
+        .product h2 {
+            margin-bottom: 8px;
+        }
+
+        #productcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.product {
+    flex: 0 0 calc(33.333% - 20px); /* 3 columns */
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 16px;
+    background-color: #ffffff;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.product h2 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+
+    </style>
+
+    <title>E-Commerce Search</title>
+</head>
+<body>
+    <input type="text" name="" id="searchbar" placeholder="Search here!">
+    <button onclick="search()">Search</button>
+    <div id="productcontainer"></div>
+
+<script> 
+        let products = [
+    {
+        name: "Apple iPhone 12",
+        brand: "Apple",
+        category: "Smartphone",
+        price: 799,
+        rating: 4.6,
+        stock: 25,
+        description: "6.1-inch display, A14 Bionic chip"
+    },
+    {
+        name: "Samsung Galaxy S21",
+        brand: "Samsung",
+        category: "Smartphone",
+        price: 999,
+        rating: 4.7,
+        stock: 18,
+        description: "Dynamic AMOLED display, Exynos 2100"
+    },
+    {
+        name: "Google Pixel 5",
+        brand: "Google",
+        category: "Smartphone",
+        price: 699,
+        rating: 4.5,
+        stock: 12,
+        description: "Pure Android experience, great camera"
+    },
+    {
+        name: "OnePlus 9 Pro",
+        brand: "OnePlus",
+        category: "Smartphone",
+        price: 969,
+        rating: 4.4,
+        stock: 20,
+        description: "120Hz display, Hasselblad camera"
+    },
+    {
+        name: "Sony Xperia 1 II",
+        brand: "Sony",
+        category: "Smartphone",
+        price: 1199,
+        rating: 4.3,
+        stock: 8,
+        description: "CinemaWide 4K display"
+    },
+    {
+        name: "Apple MacBook Air M1",
+        brand: "Apple",
+        category: "Laptop",
+        price: 999,
+        rating: 4.8,
+        stock: 15,
+        description: "M1 chip, fanless design"
+    },
+    {
+        name: "Dell XPS 13",
+        brand: "Dell",
+        category: "Laptop",
+        price: 1099,
+        rating: 4.6,
+        stock: 10,
+        description: "13-inch InfinityEdge display"
+    },
+    {
+        name: "HP Spectre x360",
+        brand: "HP",
+        category: "Laptop",
+        price: 1249,
+        rating: 4.5,
+        stock: 9,
+        description: "Convertible touchscreen laptop"
+    },
+    {
+        name: "Apple AirPods Pro",
+        brand: "Apple",
+        category: "Accessories",
+        price: 249,
+        rating: 4.7,
+        stock: 40,
+        description: "Active noise cancellation"
+    },
+    {
+        name: "Sony WH-1000XM4",
+        brand: "Sony",
+        category: "Accessories",
+        price: 349,
+        rating: 4.8,
+        stock: 22,
+        description: "Industry-leading noise cancellation"
+    }
+];
+
+        let container = document.getElementById("productcontainer");
+
+        function display(list) {
+        container.innerHTML = "";
+
+        list.forEach(val => {
+            let div = document.createElement("div");
+            div.classList.add("product");
+
+            div.innerHTML = `
+                <h2>${val.name}</h2>
+                <p><strong>Brand:</strong> ${val.brand}</p>
+                <p><strong>Category:</strong> ${val.category}</p>
+                <p><strong>Price:</strong> $${val.price}</p>
+                <p><strong>Rating:</strong> ⭐ ${val.rating}</p>
+                <p><strong>Stock:</strong> ${val.stock > 0 ? val.stock + " available" : "Out of stock"}</p>
+                <p><strong>Description:</strong> ${val.description}</p>
+            `;
+
+            container.appendChild(div);
+        });
+    }
+
+        display(products);
+
+        let conatainer = document.getElementById("productcontainer");
+        let searchbar = document.getElementById("searchbar");
+
+        function search() {
+            let search = searchbar.value.toLowerCase();
+            let filter = products.filter((val) => {
+                let keyword = search;
+                return val.name.toLowerCase().includes(keyword) ||
+                val.brand.toLowerCase().includes(keyword) ||
+                val.category.toLowerCase().includes(keyword) ||
+                val.description.toLowerCase().includes(keyword)
+            });
+            display(filter);
+        }
+</script>
+
+</body>
+</html>
