@@ -1,0 +1,11 @@
+filter
+pricing
+rating
+gender
+brand
+
+page design 
+filter
+
+
+task 2: deployation of frontend 
