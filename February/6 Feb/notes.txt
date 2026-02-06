@@ -16,4 +16,4 @@ proper std managemnt system
 delete
 update
 edit
-crud
+crud operations
