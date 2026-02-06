@@ -20,6 +20,8 @@ export default function demo() {  // default export
 
 
 
-// export - 
+
+
+// export -  
 // named export - consists of multiple exports in a file
 // default export - consists of only one export in a file
