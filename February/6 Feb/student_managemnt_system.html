@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student management system</title>
+</head>
+<body>
+    <h1>Student Management System</h1>
+    <input type="text" id="inputname" placeholder="Enter Name:">
+    <input type="number" id="inputage" placeholder="Enter Age:">
+    <input type="text" id="inputgrade" placeholder="Enter Grade(A/B/C)">
+    <button onclick="submit()"> Submit </button>
+    <div id="container"></div>
+
+
+    <script> 
+    
+        let name = document.getElementById("inputname");
+        let age = document.getElementById("inputage");
+        let grade = document.getElementById("inputgrade");
+
+        let students = [];
+
+        function submit() {
+            let student = {
+                name: name.value,
+                age: age.value,
+                grade: grade.value
+            }
+            students.push(student);
+            console.log(students);
+            display();
+        }
+
+        function display(list){
+            let container = document.getElementById("container");
+            list.forEach((std) => {
+                let div = document.createElement("div");
+                Object.entries(std).forEach(([key, value]) => {
+                    let p = document.createElement("p");
+                    p.innerText = `${key} : ${value}`;
+                    div.appendChild(p);
+                })
+            })
+            container.appendChild(div);
+        }
+
+
+    </script>
+    
+    
+    
+    
+    
+    <!-- <script>
+        let students = [];
+        function submit() {
+            let name = document.getElementById("inputname").value;
+            let age = document.getElementById("inputage").value;
+            let grade = document.getElementById("inputgrade").value;
+            let student = {
+                name: name,
+                age: age,
+                grade: grade
+            }
+            students.push(student);
+            console.log(students);
+            display();
+        }
+
+        function display() {
+            let container = document.getElementById("container");
+            container.innerHTML = "";
+            for(let i=0; i<students.length; i++) {
+                container.innerHTML += `<p>Name: ${students[i].name} Age: ${students[i].age} Grade: ${students[i].grade}</p>`;
+            }
+        }
+
+    </script> -->
+</body>
+</html>

@@ -1,0 +1,19 @@
+modules - 
+common modules vs ES6 modules 
+structuring
+destructuring
+array restucturing 
+java asyncronous 
+
+asyncronous
+diff between Compiler an Interpreter
+entries
+student management system
+
+
+hw: 
+proper std managemnt system
+delete
+update
+edit
+crud
